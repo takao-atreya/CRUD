@@ -8,7 +8,7 @@
 
         <title>LeaveFlow</title>
 
-        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'style.css')}}">
     </head>
 
     <body>
@@ -22,6 +22,16 @@
                        id = "employeeName"
                        required>
 
+                <label for = "employeeID">Employee ID</label>
+                <input type = "text"
+                       id = "employeeID"
+                       required>
+                
+                <label for = "department">Department</label>
+                <select id = "department">
+                    <option>IH Department</option>
+                    <option>Equipment Planning Department</option>
+                </select>
                 <label for = "leaveType">Leave Type</label>
                 <select id = "leaveType">
                     <option>Paid Leave</option>
@@ -51,7 +61,7 @@
 
         </div>
 
-        <script src="script.js"></script>
+        <script src="{{ url_for('static', filename = 'script.js')}}"></script>
 
     </body>
 </html>
