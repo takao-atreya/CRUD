@@ -37,6 +37,22 @@ textarea {
     font: inherit;
 }
 
-https://www.youtube.com/watch?v=G3e-cpL7ofc&utm_source=chatgpt.com
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
-https://www.youtube.com/watch?v=EerdGm-ehJQ&utm_source=chatgpt.com
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+}

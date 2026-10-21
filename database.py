@@ -23,3 +23,11 @@ conn.commit()
 conn.close()
 
 print("Database created successfully!")
+
+'''
+
+https://www.youtube.com/watch?v=G3e-cpL7ofc&utm_source=chatgpt.com
+
+https://www.youtube.com/watch?v=EerdGm-ehJQ&utm_source=chatgpt.com
+
+'''
