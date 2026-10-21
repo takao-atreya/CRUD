@@ -46,7 +46,7 @@ def employee():
     if session.get("role") != "employee":
         return redirect(url_for("login"))
 
-    return render_template("emplyoee.html")
+    return render_template("employee.html")
 
 @app.route("/manager")
 def manager():
