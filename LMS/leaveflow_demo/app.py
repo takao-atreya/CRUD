@@ -7,6 +7,21 @@ import os
 
 app = Flask(__name__)
 
+
+
+
+
+from flask_sqlalchemy import SQLAlchemy
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///leaveflow.db"
+db = SQLAlchemy(app)
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    username = db.Column()
+
+
+
+
 app.secret_key = os.environ["SECRET_KEY"]
 
 users = {
